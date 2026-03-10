@@ -38,6 +38,7 @@ section{
     padding:30px;
     background:#fff;
     transition:all 0.3s ease;
+    height:100%;
 }
 
 .card:hover{
@@ -80,10 +81,21 @@ section{
     transform:scale(1.05);
 }
 
-/* 카드 간격 */
+/* 카드 정렬 안정화 */
 
 .row{
     gap:30px;
+    justify-content:center;
+}
+
+/* 리뷰 카드 줄맞춤 */
+
+.row > div{
+    display:flex;
+}
+
+.row > div .card{
+    width:100%;
 }
 
 /* 반응형 */
@@ -91,15 +103,15 @@ section{
 @media (max-width:768px){
 
 .hero h1{
-font-size:2rem;
+    font-size:2rem;
 }
 
 .hero{
-padding:100px 0;
+    padding:100px 0;
 }
 
 section{
-padding:80px 0;
+    padding:80px 0;
 }
 
 }
