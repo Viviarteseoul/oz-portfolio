@@ -1,38 +1,105 @@
 body{
-font-family:'Pretendard',sans-serif;
-background:#ffe4ec;
+    font-family:'Pretendard', sans-serif;
+    background:#ffffff;
+    color:#1d1d1f;
 }
+
+/* 전체 섹션 */
+
+section{
+    padding:120px 0;
+}
+
+/* 히어로 영역 */
 
 .hero{
-background:#ffc2d1;
-padding:80px 0;
+    background:#ffffff;
+    text-align:center;
+    padding:140px 0;
 }
 
+.hero h1{
+    font-size:3rem;
+    font-weight:700;
+    letter-spacing:-0.02em;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.25rem;
+    color:#6e6e73;
+}
+
+/* 카드 */
+
 .card{
-border:none;
-border-radius:20px;
-transition:all 0.3s;
+    border:1px solid #e5e5e7;
+    border-radius:20px;
+    padding:30px;
+    background:#fff;
+    transition:all 0.3s ease;
 }
 
 .card:hover{
-transform:translateY(-8px);
-box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.08);
 }
+
+/* 카드 제목 */
+
+.card h3{
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+/* 설명 텍스트 */
 
 .about-text{
-line-height:2;
-font-size:1.1rem;
-max-width:700px;
-margin:auto;
+    line-height:1.9;
+    font-size:1.1rem;
+    max-width:720px;
+    margin:auto;
+    color:#6e6e73;
 }
 
+/* 버튼 */
+
 .btn-primary{
-background:#ff6b9a;
-border:none;
-border-radius:30px;
-padding:10px 25px;
+    background:#000;
+    color:#fff;
+    border:none;
+    border-radius:40px;
+    padding:14px 32px;
+    font-size:1rem;
+    font-weight:500;
+    transition:all 0.25s;
 }
 
 .btn-primary:hover{
-background:#ff4d84;
+    background:#1d1d1f;
+    transform:scale(1.05);
+}
+
+/* 카드 간격 */
+
+.row{
+    gap:30px;
+}
+
+/* 반응형 */
+
+@media (max-width:768px){
+
+.hero h1{
+font-size:2rem;
+}
+
+.hero{
+padding:100px 0;
+}
+
+section{
+padding:80px 0;
+}
+
 }
